@@ -1,0 +1,158 @@
+
+
+/* FONT SETTINGS */
+@font-face {
+    font-family: poppins-extralight;
+    src: url(./Font-Poppins/Poppins-ExtraLight.ttf);
+}
+@font-face {
+    font-family: poppins-regular;
+    src: url(./Font-Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: poppins-semibold;
+    src: url(./Font-Poppins/poppins-semibold.ttf);
+}
+
+/* ----- CHALLENGE ----- */
+
+/* BODY */
+body {
+    background-color: white;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* CHALLENGE */
+#challenge {
+    background-color: white;
+    width: 1110px; 
+    margin: 0;
+}
+
+/* BLOC HAUT */
+#bloc-haut {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-bottom: 70px;
+}
+#bloc-haut h1 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin: 0;
+    text-align: center;
+    font-family: poppins;
+    color: hsl(234, 12%, 34%);
+    font-weight: 200;
+    text-align: center;
+}
+#bloc-haut h1 + h1 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin: 0;
+    text-align: center;
+    color: hsl(234, 12%, 34%);
+    font-family: poppins;
+    font-weight: 600;
+    text-align: center;
+}
+
+    h1 {
+        margin: 0;
+        font-family: poppins;
+        font-weight: 600;
+        text-align: center;
+    }
+
+#bloc-haut p {
+    width: 500px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    color: hsl(229, 6%, 66%);
+    font-family: poppins;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 25px;
+    text-align: center;
+}
+
+/* BLOC BAS */
+#bloc-bas {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 30px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+    /* VIGNETTE */
+    .vignette {
+        background-color: hsl(0, 0%, 98%);
+        border-radius: 10px;
+        box-shadow: 0px 3px 10px 0px hsl(229, 6%, 66%);
+        height: 250px;
+        display: grid;
+        grid-template-columns: 185px auto auto;
+        margin: 0;
+        padding: 30px;
+    }
+    .vignette h2,p {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    .vignette div {
+        width: 62px;
+        height: 62px;
+        grid-column-end: 4;
+        margin: 0;
+    }
+    .vignette h2 {
+        color: hsl(234, 12%, 34%);
+        font-family: poppins;
+        font-size: 20px;
+        font-weight: 600;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .vignette p {
+        margin: 0;
+        color: hsl(229, 6%, 66%);
+        font-family: poppins;
+        font-size: 13px;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+
+    /* BLOC TEAM KARMA */
+    #bloc-team-karma {
+        display: grid;
+        grid-template-rows: auto auto;
+        align-content: center;
+        row-gap: 30px
+    }
+
+    /* BORDURES COLORES */
+    #border-green {
+        border-top: 10px solid hsl(180, 62%, 55%);
+    }
+    #border-red {
+        border-top: 10px solid hsl(0, 78%, 62%);
+    }
+    #border-yellow {
+        border-top: 10px solid hsl(34, 97%, 64%);
+    }
+    #border-blue {
+        border-top: 10px solid hsl(212, 86%, 64%);
+    }
